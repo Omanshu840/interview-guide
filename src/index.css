@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.light-mode {
+  --baseColor: white;
+  --priColor1: #F5FCFF;
+  --priColor2: #C9EEFF;
+  --secColor1: #00235B;
+  --secColor2: #107dac;
+  --secColor3: #3B3B3B;
+  --btnColor: #0E6DFD;
+  /* #3572d5 */
+  --borderColor: #ced4da;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-mode {
+  --baseColor: #121212;
+  --priColor1: #222831;
+  --priColor2: #393E46;
+  --secColor1: #05C5C0;
+  --secColor2: #797A7F;
+  --secColor3: #92ddc8;
+  --btnColor: #797A7F;
+  --borderColor: #6a6c6e;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--priColor1);
+  color: var(--secColor1);
+  margin-bottom: 200px;
+  padding: 0px 10px;
+}
+
+.pptx-frame {
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .pptx-frame {
+    height: 80vh;
+  }  
 }
